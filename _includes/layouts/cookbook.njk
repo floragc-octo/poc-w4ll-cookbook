@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+---
+
+  <article class="cookbook">
+    <h1 class="cookbook__title">{{ title }}</h1>
+    <p> Date de publication: <time datetime="{{ page.date }}">{{ page.date }}</time> </p>
+    <div class="cookbook__content">{{ content | safe }}</div>
+  </article>

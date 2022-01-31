@@ -1,10 +1,23 @@
+:root {
+    --text-color: #2c3e50;
+    --border-color: #ccc;
+    --hover-border-color: #eee;
+}
+
 html, body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    color: rgba(0,0,0,.87);
+    color: var(--text-color);
 }
 
 body {
     padding: 1rem 3rem;
+    width: 800px;
+    margin: auto;
+
+    @media (max-width: 1000px) {
+        width: auto;
+        margin: 0 1rem;
+    }
 }
 
 h1 {
@@ -15,27 +28,63 @@ h1 {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-nav > * {
-    cursor: pointer;
-    color: rgba(0,0,0,.87);
-
-    display: flex;
-    flex-flow: column;
-
-    border: 1px solid #ccc;
+nav > a {
+    color: var(--text-color);
+    font-weight: 800;
+    text-underline-offset: 3px;
+    
+    border: 1px solid var(--border-color);
     border-radius: 3px;
     
     padding: 2rem;
-    
-    font-weight: 800;
 }
 
-nav > *:hover {
-    background-color: #eee;
-    border: 1px solid #eee;
+nav a:hover, nav a:active {
+    background-color: var(--hover-border-color);
+    border: 1px solid var(--hover-border-color);
+}
+
+.cookbook--list__item {
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 2rem;
+}
+
+.cookbook--list > :not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.recipe--list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 1rem;
+}
+
+.recipe {
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 2rem;
+}
+
+.recipe__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.recipe__abstract {
+    margin-bottom: 1rem;
+}
+
+.cookbook__title {
+    padding-bottom: 1rem;
+    border-bottom: 0.3rem solid;
+}
+
+.cookbook__content {
+    line-height: 1.7;
 }

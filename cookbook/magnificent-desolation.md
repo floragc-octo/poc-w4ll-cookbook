@@ -3,7 +3,7 @@ title: Magnificent Desolation
 description: Buzz Aldrin - Magnificent Desolation
 tags: post
 date: 2021-06-19
-layout: layouts/blogpost.njk
+layout: layouts/cookbook.njk
 ---
 
 ## Solution
