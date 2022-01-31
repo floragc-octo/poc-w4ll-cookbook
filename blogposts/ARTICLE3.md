@@ -1,13 +1,13 @@
 ---
-title: Curabitur eget ante lobortis
-description: Curabitur eget ante lobortis, tempor mauris efficitur
+title: Magnificent Desolation
+description: Buzz Aldrin - Magnificent Desolation
 tags: post
 date: 2021-06-19
 layout: layouts/blogpost.njk
 ---
 
 ## Solution
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pharetra sapien. Sed vestibulum erat fringilla, pellentesque ligula sit amet, bibendum nulla. Phasellus nulla ante, feugiat in condimentum eu, vestibulum nec sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget ante lobortis, tempor mauris efficitur, faucibus nunc. In dapibus, nisi ac ornare tristique, nisl erat pharetra nunc, at aliquet ante tortor maximus turpis. Sed gravida nisi vel auctor fringilla.
+I believe that space travel will one day become as common as airline travel is today. I’m convinced, however, that the true future of space travel does not lie with government agencies — NASA is still obsessed with the idea that the primary purpose of the space program is science — but real progress will come from private companies competing to provide the ultimate adventure ride, and NASA will receive the trickle-down benefits.
 
 ```html
 <!DOCTYPE html>
@@ -40,4 +40,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pharetra sapie
 </html>
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pharetra sapien. Sed vestibulum erat fringilla, pellentesque ligula sit amet, bibendum nulla.
+We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.
