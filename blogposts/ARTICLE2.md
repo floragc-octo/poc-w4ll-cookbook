@@ -1,16 +1,21 @@
 ---
-title: Phasellus nulla ante
-description: Phasellus nulla ante, feugiat in condimentum eu
+title: We Choose to go to the Moon
+description: John F. Kennedy - We Choose to go to the Moon
 tags: post
 date: 2021-06-19
 layout: layouts/blogpost.njk
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pharetra sapien. Sed vestibulum erat fringilla, pellentesque ligula sit amet, bibendum nulla. Phasellus nulla ante, feugiat in condimentum eu, vestibulum nec sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget ante lobortis, tempor mauris efficitur, faucibus nunc. In dapibus, nisi ac ornare tristique, nisl erat pharetra nunc, at aliquet ante tortor maximus turpis. Sed gravida nisi vel auctor fringilla.
+There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, the moon? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?
 
-## Solution
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pharetra sapien. Sed vestibulum erat fringilla, pellentesque ligula sit amet, bibendum nulla. Phasellus nulla ante, feugiat in condimentum eu, vestibulum nec sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget ante lobortis, tempor mauris efficitur, faucibus nunc. In dapibus, nisi ac ornare tristique, nisl erat pharetra nunc, at aliquet ante tortor maximus turpis. Sed gravida nisi vel auctor fringilla.
+We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.
+
+
+It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.
+
+
+In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.
 
 ```html
 <!DOCTYPE html>
@@ -54,5 +59,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu pharetra sapie
   </body>
 </html>
 ```
-
-Note : Dans cet exemple, les header et footer ont une hauteur fixe, mais elle pourrait ne pas l’être. Ce code s’adapte très bien au contenu de ces éléments.
