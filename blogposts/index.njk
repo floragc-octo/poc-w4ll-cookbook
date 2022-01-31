@@ -1,0 +1,29 @@
+---
+title: BLOG
+layout: layouts/page.njk
+---
+
+<section>
+    <h2>Recent posts</h2>
+    <div>
+      {% for post in collections.post | reverse %}
+        {% if loop.index0 < 3 %}
+        <div>
+          <div>
+            <header>
+              <p>
+                {{ post.data.title }}
+              </p>
+            </header>
+            <div>
+                {{ post.data.description }}
+            </div>
+            <footer>
+              <a href="{{ post.url }}">Read article</a>
+            </footer>
+          </div>
+        </div>
+          {% endif %}
+      {% endfor %}
+    </div>
+</section>

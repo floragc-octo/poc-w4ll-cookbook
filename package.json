@@ -1,0 +1,25 @@
+{
+  "name": "poc-w4ll-cookbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floragc-octo/poc-w4ll-cookbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/floragc-octo/poc-w4ll-cookbook/issues"
+  },
+  "homepage": "https://github.com/floragc-octo/poc-w4ll-cookbook#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
+  }
+}
