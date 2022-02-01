@@ -3,17 +3,35 @@ title: Cookbook
 layout: layouts/page.njk
 ---
 
+<h2>Quelques layouts de base</h2>
 <section class="list recipe--list">
-  {% for post in collections.post | reverse %} {% if loop.index0 < 3 %}
+  {% for layout in collections.layout | reverse %} {% if loop.index0 < 3 %}
   <article class="recipe recipe--list__item">
     <header class="recipe__title">
-      {{ post.data.title }}
+      {{ layout.data.title }}
     </header>
     <div class="recipe__abstract">
-      {{ post.data.description }}
+      {{ layout.data.description }}
     </div>
     <footer class="recipe__link">
-      <a href="{{ post.url }}">Read article</a>
+      <a href="{{ layout.url }}">Lire la recette</a>
+    </footer>
+  </article>
+  {% endif %} {% endfor %}
+</section>
+
+<h2>Autres recettes</h2>
+<section class="list recipe--list">
+  {% for recipe in collections.recipe | reverse %} {% if loop.index0 < 3 %}
+  <article class="recipe recipe--list__item">
+    <header class="recipe__title">
+      {{ recipe.data.title }}
+    </header>
+    <div class="recipe__abstract">
+      {{ recipe.data.description }}
+    </div>
+    <footer class="recipe__link">
+      <a href="{{ recipe.url }}">Lire la recette</a>
     </footer>
   </article>
   {% endif %} {% endfor %}

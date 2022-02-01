@@ -1,7 +1,7 @@
 ---
 title: Magnificent Desolation
 description: Buzz Aldrin - Magnificent Desolation
-tags: post
+tags: ['recipe']
 date: 2021-06-19
 layout: layouts/cookbook.njk
 ---
