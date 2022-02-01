@@ -1,7 +1,7 @@
 ---
 title: Symbol of Apollo
 description: Gene Cernan - Symbol of Apollo
-tags: post
+tags: ['recipe']
 date: 2021-06-19
 layout: layouts/cookbook.njk
 ---
