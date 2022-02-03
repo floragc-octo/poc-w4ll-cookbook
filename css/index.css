@@ -1,113 +1,162 @@
 :root {
-    --text-color: #2c3e50;
-    --border-color: #ccc;
-    --hover-border-color: #eee;
-    --title-border-color: #eee;
+  --text-color: #2c3e50;
+  --border-color: #ccc;
+  --hover-border-color: #eee;
+  --title-border-color: #eee;
 }
 
-html, body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    color: var(--text-color);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(20px, 1rem + 0.1vw, 24px);
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--text-color);
 }
 
 body {
-    padding: 1rem 3rem;
-    width: 800px;
-    margin: auto;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+  width: calc(800px + 2 * 3rem);
+  margin: auto;
+}
 
-    @media (max-width: 1000px) {
-        width: auto;
-        margin: 0 1rem;
-    }
+@media (max-width: 1000px) {
+  html {
+    font-size: 26px;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+  }
 }
 
 h1 {
-    font-size: 3.052rem;
-    font-weight: 700;
-    letter-spacing: .035rem;
-    line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.035rem;
+  line-height: 1.2;
+  margin: 1.5rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem 0;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 nav > a {
-    color: var(--text-color);
-    font-weight: 800;
-    text-underline-offset: 3px;
-    
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-    
-    padding: 2rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 800;
+
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+
+  padding: 1rem;
 }
 
-nav a:hover, nav a:active {
-    background-color: var(--hover-border-color);
-    border: 1px solid var(--hover-border-color);
+@media (max-width: 1000px) {
+  nav > a {
+    font-size: 1rem;
+  }
+}
+
+nav a:hover,
+nav a:active {
+  background-color: var(--hover-border-color);
+  border: 1px solid var(--hover-border-color);
 }
 
 .cookbook--list__item {
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-    padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 2rem;
 }
 
 .cookbook--list > :not(:last-child) {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-.recipe--list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-gap: 1rem;
+.recipe--list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 1rem;
 }
 
 .recipe {
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-    padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 2rem;
 }
 
 .recipe__title {
-    font-size: 1.3rem;
-    font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
-.recipe__abstract {
-    margin-bottom: 1rem;
+.recipe__abstract,
+.recipe__link {
+  font-size: 0.8rem;
 }
 
 .cookbook__title {
-    padding-bottom: 1rem;
-    border-bottom: 0.3rem solid;
+  padding-bottom: 1rem;
+  border-bottom: 0.3rem solid;
 }
 
 .cookbook__content {
-    line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.cookbook__parution {
+  margin-bottom: 0.8rem;
+}
+
+.cookbook__content > * + * {
+  margin-top: 0.8rem;
 }
 
 .cookbook__content h2 {
-    border-bottom: 2px solid var(--title-border-color);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid var(--title-border-color);
 }
 
-.cookbook__content pre[class*=language-],
-.cookbook__content code[class*=language-] {
-    font-size: 0.8rem;
+.cookbook__content pre[class*="language-"],
+.cookbook__content code[class*="language-"] {
+  font-size: 0.7rem;
 }
 
 .cookbook__content blockquote {
-    border-left: 5px solid var(--title-border-color);
-    padding-left: 1rem;
-    margin-left: 1rem;
-    font-style: italic;
+  border-left: 5px solid var(--title-border-color);
+  padding-left: 1rem;
+  margin-left: 1rem;
+  font-style: italic;
 }
 
 .cookbook__content p code {
-    background-color: var(--title-border-color);
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.5rem;
+  background-color: var(--title-border-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.cookbook__content ul li {
+  margin-inline-start: 3rem;
+  padding-inline-start: 1rem;
 }

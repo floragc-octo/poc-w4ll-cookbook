@@ -1,5 +1,5 @@
 ---
-title: Un panier sticky (wip exemple)
+title: Un panier sticky
 description: Exemple de panier sticky restant fixé en haut de la page au défilement d'une liste de produits
 tags: ['recipe', 'layout']
 date: 2021-06-19
@@ -25,7 +25,7 @@ cette propriété CSS de positionnement va permettre de positionner l'élément 
 
 **overflow: scroll** 
 
-lorsque le panier atteint la taille son conteneur parent, nous souhaitons qu'apparaisse une barre de défilement (ou `scroll`). La propriété `overflow` permet de spécifier le comportement en cas de dépassement du contenu dans son conteneur. La valeur `scroll` indique ici qu'une barre de défilement apparaîtra.
+lorsque le panier atteint la taille de son conteneur parent, nous souhaitons qu'apparaisse une barre de défilement (ou `scroll`). La propriété `overflow` permet de spécifier le comportement en cas de dépassement du contenu dans son conteneur. La valeur `scroll` indique ici qu'une barre de défilement apparaîtra.
 
 ### code HTML
 
@@ -107,16 +107,19 @@ Dans le code vous pouvez voir la notation `--space` ainsi que `var(--space)`.
 
 Il s'agit de custom properties CSS, pouvant s'apparenter à des variables.
 
-La propriété est définie avec la notation `--am-propriété` et s'utilise avec la notation `(var--ma-propriété)`
+La propriété est définie avec la notation `--am-propriété` et s'utilise avec la notation `(var--ma-propriété)`.
 
 ### Box-sizing
-La propriété CSS box-sizing indique comment seront calculéesla hauteur et la largeur d'un élément est calculée, en prenant en compte tous les éléments qui peuvent être prise en compte: padding, margin, border-size.
+La propriété CSS box-sizing indique comment seront calculées la hauteur et la largeur d'un élément est calculée, en prenant en compte tous les éléments qui peuvent être prise en compte: padding, margin, border-size.
+
 `box-sizing: border-box` utilisé dans notre exemple spécifie qu'il faut prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur.
+
 Pourquoi cela est nécessaire: nous calculons la max-height, le top et le bottom en pixel afin de positionner le panier en haut du contenu parent et provoquer le scroll lorsqu'il atteint la taille du parent. Si nous ne spécifions pas ce box-sizing, il nous faudra ajouter la largeur des border ainsi que les paddings haut et bas du panier dans tous ces calculs.
 
 
 ### Flex properties
 Dans le code nous utilisons le layout `flexbox` pour positionner la liste des produits et le panier verticalement.
+
 Nous souhaitons que le panier fasse 400px de large et que le contenu adjacent prenne le reste de la place allouée par la taille du parent.
 
 Voici le détails de propriétés utilisées : 
@@ -126,4 +129,5 @@ Cette propriété indique la taille initiale d'un contenu avant qu'il ne soit re
 
 `flex-grow`
 Cette propriété indique le facteur d'expansion d'un élément, sous la forme d'une proportion comparative aux autres enfants de son parent. Si tous les enfants du parent ont une proportion de 1, ils prendront tous une portion égale du parent (100%/nb d'enfant). Si un de ces enfant a un facteur plus élevé il prendra une place plus importante.
-Dans notre exemple, nous avons fixé une taille fixe de 400% au panier, et nous souhaitons que les autres enfants prennent la place restant quel que soit leur contenu. Pour cela, nous avons fixé le facteur d'extansion à 1 pour le panier et à 999 (valeur volontairement elevée) pour la liste des produits.
+
+Dans notre exemple, nous avons fixé une taille fixe de 400px au panier, et nous souhaitons que les autres enfants prennent la place restant quel que soit leur contenu. Pour cela, nous avons fixé le facteur d'extansion à 1 pour le panier et à 999 (valeur volontairement elevée) pour la liste des produits.
