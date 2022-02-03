@@ -4,6 +4,6 @@ layout: layouts/base.njk
 
   <article class="cookbook">
     <h1 class="cookbook__title">{{ title }}</h1>
-    <p> Date de publication: <time datetime="{{ page.date }}">{{ page.date }}</time> </p>
+    <p class="cookbook__parution"> Cette recette a été publiée le <time datetime="{{ page.date | convertRecipeDate }}">{{ page.date | convertRecipeDate }}</time> </p>
     <div class="cookbook__content">{{ content | safe }}</div>
   </article>
