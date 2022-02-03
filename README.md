@@ -7,10 +7,7 @@ c'est un POC
 
 ## Features
 
-- A propos
-- Cookbook
-- Articles
-- TIL (Today I learned)
+- Cookbook avec recettes
 
 ## Build
 
